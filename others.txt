@@ -1,0 +1,27 @@
+
+Usuarios:
+	Administrador: SISTEMAS
+	No-Administrador: AppConnect
+
+Grupos
+	Administradores,Usuarios: SISTEMAS
+	Usuarios: AppConnect
+
+
+
+Cambiar al usuario administrador, que si no hay crearlo y ir configurar grupos y clave
+
+Verificar si el veyon esta instalado desde el Panel de Control
+
+
+
+Limite de tiempo de la contraseña para ambos usuarios
+	Set-LocalUser -Name $env:USERNAME -PasswordNeverExpires $true
+
+[HOSTNAME]
+	15 caracteres: MAC+POSICION
+	POSICON: S1 1
+	Rename-Computer -NewName "full name + mac" -Restart
+
+
+Activacion de Windows mediante MASSGRAVE
